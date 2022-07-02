@@ -7,54 +7,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fetch care</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!-- HEADER SECTION -->
     <section class="header col">
-        <div class="custom-shape-divider-top-1656704314">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-                <defs>
-                    <linearGradient id="header-shape-gradient" x2="0.35" y2="1">
-                        <stop offset="0%" stop-color="var(--color-stop)" />
-                        <stop offset="30%" stop-color="var(--color-stop)" />
-                        <stop offset="100%" stop-color="var(--color-bot)" />
-                      </linearGradient>
-                  </defs>
+        <div class="custom-shape-divider-bottom-1656772972">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
             </svg>
-        </div >
-        <div class="container col">
-            <div class="navigation">
-                <nav>
-                    <a href="#" class="logo"> <img src="imgs/Group 95.png" alt=""></a>
-                    <ul>
-                        <li><a class="nav__link" href="#">HOME</a></li>
-                        <li><a class="nav__link" href="#">ABOUT</a></li>
-                        <li><a class="nav__link" href="#">SERVICES</a></li>
-                        <li><a class="nav__link" href="#">CONTACT</a></li>
-                    </ul>
-                </nav>
-            </div>
-<div class="row">
-    <div class="col header__content">
-        <h1>We Get Pet Care!</h1>
-        <p>For over 17 Years, Fetch! Pet Care has been a trusted 
-            partner in keeping pets healthy and happy!</p>
-        <div class="row">
-            <a href="#" class="btn">Schedule Service</a>
-            <a href="#" class="btn__call">Or call <span>000-000-000</span></a>
         </div>
-    </div>
-    <div class="col">
-        <img src="imgs/Group 73.png" alt="">
-    </div>
-</div>
+        <div class="container col">
+            <nav>
+                <a href="#" class="logo"><img src="imgs/Group 95.png" alt=""></a>
+                <div class="nav__links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a class="nav__link" href="#">Location</a></li>
+                        <li> <a class="nav__link" href="#">Services</a></li>
+                        <li> <a class="nav__link" href="#coursesWeOffer">About us</a></li>
+                        <li> <a class="nav__link" href="F:\Portfolio websites\Eduford-main/contact.html">Franchise with
+                                us</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="row intro__content">
+                <div class="col header__content">
+                    <h1>We Get Pet Care!</h1>
+                    <p>For over 17 Years, Fetch! Pet Care has been a trusted
+                        partner in keeping pets healthy and happy!</p>
+                    <div class="row header__btns">
+                        <a href="#" class="btn">Schedule Service</a>
+                        <a href="#" class="btn__call">Or call <span>000-000-000</span></a>
+                    </div>
+                </div>
+                <div class="col header__img">
+                    <img src="imgs/Group 73.png" alt="">
+                </div>
+            </div>
         </div>
         </div>
     </section>
+
+    <!-- OUR SERVICES -->
+    <div class="wrapper">
+        <section class="ourServices sectionSpecifity container row">
+            <div class="custom-shape-divider-bottom-1656780438">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
+                    <defs>
+                        <linearGradient id="header-shape-gradient" x2="0.35" y2="1">
+                            <stop offset="0%" stop-color="var(--color-stop)" />
+                            <stop offset="60%" stop-color="var(--color-stop)" />
+                            <stop offset="100%" stop-color="var(--color-bot)" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+
+            </div>
+            <div class="col services__content">
+                <h2>Our Services</h2>
+                <p>National Brand With a Local Feel.
+                    Experience the Fetch! Difference</p>
+            </div>
+            <div class="col services">
+                <div class="row service__row">
+                    <div class="col service__card">
+                        <img src="imgs/our-services/dog.png" alt="" class="service__card__img">
+                        <h4 class="service__card__heading">Dog Walking</h4>
+                    </div>
+                    <div class="col service__card">
+                        <img src="imgs/our-services/Group 63.png" alt="" class="service__card__img">
+                        <h4 class="service__card__heading">Pet Sitting</h4>
+                    </div>
+                </div>
+                <div class="row service__row">
+                    <div class="col service__card">
+                        <img src="imgs/our-services/Group 65.png" alt="" class="service__card__img">
+                        <h4 class="service__card__heading">Overnight Care</h4>
+                    </div>
+                    <div class="col service__card">
+                        <img src="imgs/our-services/Group 64.png" alt="" class="service__card__img">
+                        <h4 class="service__card__heading">Other Services</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
     <script src="script.js"></script>
 </body>
 
