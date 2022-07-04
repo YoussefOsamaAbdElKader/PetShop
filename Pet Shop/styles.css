@@ -7,8 +7,9 @@ body{
     background-color: #F3F6FB;
 }
 .container{
-    max-width: 1140px;
+    max-width: 1280px;
     margin:  0 auto;
+    padding: 0 2em;
 }
 .row{
     display: flex;
@@ -20,9 +21,6 @@ body{
 }
 img{
     max-width: 100%;
-}
-.sectionSpecifity{
-    padding: 5em 0;
 }
 
 p{
@@ -155,17 +153,18 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 /* OUR SERVICES */
+.ourServices{
+    padding: 5em 2em;
+}
 .wrapper{
-    position: absolute;
+    position: relative;
     width: 100%;
-    padding: 5em 0;
+    padding: 2em 0;
     margin: 0;
 }
-.ourServices{
-    padding: 2em;
-}
-.services__content h2{
-    font-size: 2.4rem;
+
+.heading__section{
+    font-size: 2rem;
     letter-spacing: .35px;
     color: #FF6752;
 }
@@ -212,6 +211,7 @@ h1,h2,h3,h4,h5,h6,p{
     left: 0;
     width: 100%;
     overflow: hidden;
+    z-index: -1;
     line-height: 0;
     transform: rotate(180deg);
 }
@@ -230,6 +230,176 @@ h1,h2,h3,h4,h5,h6,p{
 .custom-shape-divider-bottom-1656780438 .shape-fill {
     fill:url(#header-shape-gradient) #fff;
 }
+
+/* Testmonials */
+.testmonials__wrapper{
+    position: relative;
+}
+.testmonials{
+    padding: 5em 0;
+    width: 80%;
+    place-items: center;
+}
+.custom-shape-divider-top-1656882394 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: -2;
+
+}
+
+.custom-shape-divider-top-1656882394 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 272px;
+
+}
+
+#header-shape-gradient-bottom {
+    --color-stop: #6a9cfa;
+    --color-bot: #4487FF;
+  }
+.custom-shape-divider-top-1656882394 .shape-fill {
+    fill:url(#header-shape-gradient-bottom) #fff;
+
+}
+.testmonial__wrapper{
+    width: 100%;
+}
+.testmonials .heading__section{
+    width: 60%;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 2em;
+}
+.testmonial__card{
+    place-items: center;
+    text-align: center;
+    gap: 1em;
+    position: relative;
+    color: white;
+    padding:2em;
+    width: 100%;
+    border-radius: 1em;
+}
+.testmonial__card:nth-child(1), .testmonial__card:nth-child(3){
+    background-color: #d56046;
+}
+.testmonial__card:nth-child(2){
+    background-color: #4487FF;
+}
+
+.testmonial__card  + .testmonial__card{
+    margin-left: 2em;
+}
+.card__img{
+    width: 15%;
+    border-radius: 50%;
+    z-index: 2;
+}
+.custom-shape-divider-top-1656885627 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+}
+
+.custom-shape-divider-top-1656885627 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 146px;
+    border-radius: 1em;
+
+}
+
+.custom-shape-divider-top-1656885627 .shape-fill {
+    fill: #6A9CFA;
+}
+.card__heading{
+    z-index: 2;
+}
+.card__paragraph{
+    z-index: 2;
+}
+.custom-shape-divider-top-1656885910 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1656885910 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 146px;
+    border-radius: 1em;
+
+}
+
+.custom-shape-divider-top-1656885910 .shape-fill {
+    fill: #FF6752;
+}
+
+/* HOW IT WORKS */
+.howItworks__wrapper{
+
+    position: relative;
+}
+.bg-howItWorks__wrapper{
+    position: absolute;
+    right: -300px;
+    width: 50%;
+    z-index: -2;
+}
+.howItWorks{
+    display: flex;
+    align-items: center;
+    padding: 5em 2em;
+    justify-content: space-between;
+}
+.howItWorks__steps{
+    position: relative;
+    width:40%;
+}
+.bg-howItWorks{
+    position: absolute;
+    top: 20px;
+    height: 95%;
+    z-index: -1;
+}
+.step__card{
+    padding: 2em 4em;
+    background-color: white;
+    text-align: center;
+    gap: 1em;
+    width: 38%;
+    border-radius: 1em;
+    box-shadow: 0px 3px 8px rgba(0,0,0,.15);
+}
+
+.step__card:nth-child(3){
+    align-self: flex-end;
+    margin-right: 5vw;
+}
+.paragraph__section{
+    width: 75%;
+    color: #a09f9f;
+}
+
+
+
 /* MEDIA QUERIES */
 
 
@@ -251,7 +421,7 @@ h1,h2,h3,h4,h5,h6,p{
     .services{
         width: 80%;
     }
-    .services__content h2{
+    .heading__section{
         font-size: 2rem;
     }
 }
@@ -322,7 +492,7 @@ h1,h2,h3,h4,h5,h6,p{
     .btn__call{
         font-size: .8rem;
     }
-    .services__content h2{
+    .heading__section h2{
         font-size: 1.8rem;
     }
     .services__content p{
