@@ -26,6 +26,8 @@ img{
 p{
     line-height: 1.7;
 }
+/* KEY FRAMES  */
+
 
 /* HEADER SECTION */
 .fa-bars{
@@ -39,7 +41,7 @@ p{
 .header{
     position: relative;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background: rgb(255,103,82);
     background: linear-gradient(126deg, rgba(255,103,82,1) 41%, rgba(255,160,70,1) 100%);
     padding: 2em;
@@ -49,7 +51,8 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 0 ;
+    padding: 1em 0;
+
 }
 nav ul{
     display: flex;
@@ -109,9 +112,10 @@ h1,h2,h3,h4,h5,h6,p{
     width: 100%;
     text-align: left;
     color: #ffffff;
-    justify-content: flex-start;
     align-items: flex-start;
     gap: 2em;
+    height: 70vh;
+    justify-content: center;
 }
 
 .header__content p{
@@ -354,20 +358,18 @@ h1,h2,h3,h4,h5,h6,p{
 
 /* HOW IT WORKS */
 .howItworks__wrapper{
-
     position: relative;
 }
 .bg-howItWorks__wrapper{
     position: absolute;
-    right: -300px;
+    right: 0px;
     width: 50%;
     z-index: -2;
 }
 .howItWorks{
     display: flex;
     align-items: center;
-    padding: 5em 2em;
-    justify-content: space-between;
+    gap: 2em;
 }
 .howItWorks__steps{
     position: relative;
@@ -383,22 +385,172 @@ h1,h2,h3,h4,h5,h6,p{
     padding: 2em 4em;
     background-color: white;
     text-align: center;
+    align-items: center;
     gap: 1em;
-    width: 38%;
+    width: 50%;
     border-radius: 1em;
     box-shadow: 0px 3px 8px rgba(0,0,0,.15);
 }
 
 .step__card:nth-child(3){
     align-self: flex-end;
-    margin-right: 5vw;
 }
 .paragraph__section{
     width: 75%;
     color: #a09f9f;
 }
 
+/* MakeFetchHappen Section */
+.makeFetchHappen{
+    background-color: #4487FF;
+    padding: 2em;
+    border-radius: 1em;
+    color: white;
+    gap: 2em;
+}
+.makeFetchHappen__wrapper{
+    padding: 5em;
+}
+.makeFetchHappen .heading__section{
+    color: #FFE530;
+}
+.makeFetchHappen__btn{
+    background-color: white;
+    color: #FF6752;
+    font-weight: 700;
+}
+.makeFetchHappen__btn:hover{
+    background-color: #FF6752;
+    color: white;
+}
+.makeFetchHappen__content{
+    gap: 1em;
+}
+.makeFetchHappen__content p{
+    width: 85%;
+}
+/* AS SEEN ON SECTION */
+.asSeenOn{
+    padding: 5em;
+}
+.asSeenOn .row{
+    justify-content: space-between;
+}
+.asSeenOn__logo{
+    width: 100px;
+}
+/* FOOTER */
+.footer{
+    position: relative;
+    background-color: #FF6752;
+    padding: 5em 0;
+    display: flex;
+    place-items: center;
 
+}
+.custom-shape-divider-top-1657044288 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1657044288 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 130px;
+}
+
+.custom-shape-divider-top-1657044288 .shape-fill {
+    fill: #F3F6FB;
+}
+.footer__container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 2em;
+    margin-top: 2em;
+    flex: 1;
+    flex-wrap: wrap;
+}
+.footer__heading{
+    color:#FFE530;
+    font-size: 1.4rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.footer__links{
+    color: white;
+    text-decoration: none;
+    letter-spacing: .15px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Montserrat";
+    transition: all .4s ease;
+}
+.footer__links:hover{
+    color: #4487FF;
+}
+.footer__links + .footer__links{
+    margin-top: 1em;
+}
+
+.hidden{
+    visibility: hidden;
+}
+.newspaper{
+    align-self: flex-start;
+}
+.footer__paragraph{
+    color: white;
+    font-size: 1.2rem;
+    font-family: "Montserrat";
+    margin-bottom: 1em;
+}
+.newspaper__input{
+    padding: 1.2em;
+    border: none;
+    background-color: transparent;
+}
+.newspaper__signUp{
+    background-color: white;
+    justify-content: space-between;
+    border-radius: 2em;
+}
+.newspaper__signUp i{
+    background-color: #FF6752;
+    padding: .5em;
+    border-radius: 50%;
+    cursor: pointer;
+    color:white;
+    margin-right: .5em;
+}
+input[type="email"]::placeholder{
+    color: #a09f9f;
+    letter-spacing: .35px;
+    font-size: .9rem;
+}
+.social__links__container{
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+.social__links{
+    background-color: #fff;
+    color: #a09f9f;
+    padding: 1em;
+    border-radius: 50%;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+.social__links:hover{
+    background-color: #6a9cfa;
+    color: white;
+}
 
 /* MEDIA QUERIES */
 
@@ -423,6 +575,35 @@ h1,h2,h3,h4,h5,h6,p{
     }
     .heading__section{
         font-size: 2rem;
+    }
+    .howItWorks{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .howItWorks__steps{
+        transform: rotate(90deg);
+    }
+    .bg-howItWorks{
+        right: 45px;
+        top: 0;
+    }
+    .step__card{
+        transform: rotate(-90deg);
+    }
+    .paragraph__section{
+        width: 100%;
+    }
+    .makeFetchHappen{
+        flex-direction: column;
+        text-align: center;
+        width: 85%;
+    }
+    .makeFetchHappen__content p{
+        width: 100%;
+    }
+    .makeFetchHappen .row{
+        justify-content: center;
     }
 }
 
@@ -504,7 +685,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 @media (max-width:680px) {
     .header{
-        height: 90vh;
+        height:80vh;
     }
     .intro__content{
         flex-direction: column-reverse;
@@ -520,6 +701,7 @@ h1,h2,h3,h4,h5,h6,p{
     .header__content{
         text-align: center;
         place-items: center;
+        justify-content: flex-start;
         gap: 1em;
         width: 80%;
     }
@@ -534,9 +716,50 @@ h1,h2,h3,h4,h5,h6,p{
     }
     .service__card + .service__card{
         margin-left: 0;
-margin: 2em 0;
+        margin: 2em 0;
     }
     .service__card h4{
         font-size: 1rem;
     }
+    .makeFetchHappen{
+        width: 100%;
+        padding: 2em;
+    }
+    .testmonials .heading__section{
+        width: 100%;
+    }
+    .heading__section{
+        font-size: 1.4rem;
+    }
+    .testmonial__wrapper{
+        width: 100%;
+        flex-direction: column;
+        gap: 1em;
+    }
+    .testmonial__card  + .testmonial__card {
+        margin-left: 0;
+    }
+    .howItWorks__steps{
+        transform: rotate(0deg);
+        width: 100%;
+        align-items: center;
+        gap: 1em;
+    }
+    .step__card{
+        transform: rotate(0deg);
+    }
+    .bg-howItWorks{
+        display: none;
+    }
+    .step__card:nth-child(3){
+        align-self: center;
+    }
+    .asSeenOn{
+        padding: 2em;
+    }
+    .asSeenOn .row{
+        flex-direction: column;
+        gap: 2em;
+    }
+
 }
