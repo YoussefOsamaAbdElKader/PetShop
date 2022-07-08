@@ -685,11 +685,15 @@ input[type="email"]::placeholder{
 
 @media (max-width:680px) {
     .header{
-        height:80vh;
+        height:90vh;
+    }
+    .logo{
+        width: 15%;
     }
     .intro__content{
         flex-direction: column-reverse;
         gap: 2em;
+        z-index: 2;
 
     }
     .intro__content img{
@@ -703,10 +707,13 @@ input[type="email"]::placeholder{
         place-items: center;
         justify-content: flex-start;
         gap: 1em;
-        width: 80%;
+        width: 100%;
     }
     .header__btns{
         flex-direction: column;
+    }
+    .services{
+        width: 100%;
     }
     .service__row{
         flex-direction: column;
@@ -720,6 +727,9 @@ input[type="email"]::placeholder{
     }
     .service__card h4{
         font-size: 1rem;
+    }
+    .card__img{
+        width: 25%;
     }
     .makeFetchHappen{
         width: 100%;
@@ -747,6 +757,7 @@ input[type="email"]::placeholder{
     }
     .step__card{
         transform: rotate(0deg);
+        width: 60%;
     }
     .bg-howItWorks{
         display: none;
@@ -761,5 +772,7 @@ input[type="email"]::placeholder{
         flex-direction: column;
         gap: 2em;
     }
-
+    .makeFetchHappen__wrapper{
+        padding: 2em;
+    }
 }
